@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA N 2 Brebes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS -->
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-blue-600 text-white fixed top-0 left-0 w-full z-10 shadow-md transition duration-300 ease-in-out">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold transition duration-300 hover:text-blue-200">SMA N 2 Brebes</h1>
+            <nav>
+                <ul id="menu" class="flex space-x-6 md:flex-row flex-col md:space-x-6 md:space-y-0 space-y-4 md:flex hidden">
+                    <li><a href="#about" class="hover:text-gray-200 transition duration-300">Tentang Kami</a></li>
+                    <li><a href="#facilities" class="hover:text-gray-200 transition duration-300">Fasilitas</a></li>
+                    <li><a href="#programs" class="hover:text-gray-200 transition duration-300">Program</a></li>
+                    <li><a href="#news" class="hover:text-gray-200 transition duration-300">Berita</a></li>
+                    <li><a href="#gallery" class="hover:text-gray-200 transition duration-300">Galeri</a></li>
+                    <li><a href="#contact" class="hover:text-gray-200 transition duration-300">Kontak</a></li>
+                </ul>
+                <button id="hamburger" class="hamburger-menu text-2xl md:hidden focus:outline-none">
+                    <i id="hamburger-open" class="fa-solid fa-bars"></i>
+                    <i id="hamburger-close" class="fa-solid fa-xmark hidden"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="pt-7">
+        <!-- Konten halaman lainnya -->
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-100 py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeIn">Selamat Datang di SMA N 2 Brebes</h2>
+            <img src="https://sman2-brebes.sch.id/wp-content/uploads/2024/11/LOGO_SMAN_2_BREBES-1.png" alt="Logo Sekolah" class="mx-auto rounded-lg w-48 max-w-xs animate__animated animate__zoomIn">
+            <p class="text-lg text-gray-700 mb-6">Sekolah dengan visi dan misi untuk mencetak generasi unggul</p>
+            <a href="#about" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500">Pelajari Lebih Lanjut</a>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="bg-gray-50">
+        <div class="container mx-auto text-center py-16">
+            <h2 class="text-3xl font-bold mb-6">Tentang Kami</h2>
+            <p class="text-gray-600 leading-relaxed mb-4 max-w-3xl mx-auto">
+                SMA Negeri 2 Brebes adalah salah satu sekolah menengah atas terbaik yang berlokasi di Brebes dengan fasilitas lengkap, guru profesional, dan lingkungan belajar yang mendukung untuk meningkatkan pot ensi siswa. 
+                SMA negeri ini didirikan pertama kali pada tahun 1973 dengan luas 39.520 <span>m<sup>2</sup></span>. Saat sekarang SMA Negeri 2 Brebes masih menggunakan program kurikulum merdeka. 
+                SMAN 2 Brebes berada di bawah naungan kepala sekolah dengan nama Sri Ningsih ditangani oleh seorang operator yang bernama Kamal Mushthafa Putra.
+            </p>
+            <img src="https://media.licdn.com/dms/image/v2/C4D1BAQF8foR2xTDxyQ/company-background_10000/company-background_10000/0/1605063078609/sma_negeri_2_brebes_cover?e=2147483647&v=beta&t=q2908jeAzZq9s7ABC7Mm3VXs8VRmykJGpJTrb6WV3dw" 
+                 alt="Foto Sekolah" class="mx-auto rounded-lg shadow-lg w-full max-w-4xl mb-5">
+    
+            <!-- Accreditation Info Section -->
+            <div class="bg-white pt-10 p-10 rounded-lg shadow-md max-w-3xl mx-auto">
+                <div class="text-center mb-6">
+                    <h1 class="text-xl font-semibold mb-5">Akreditasi SMAN 2 Brebes</h1>
+                    <p class="text-gray-600">SMAN 2 Brebes terakreditasi <strong>grade A</strong> dengan nilai <strong>97</strong> (akreditasi tahun 2016) dari BAN-S/M (Badan Akreditasi Nasional) Sekolah/Madrasah.</p>
+                </div>
+                
+                <!-- Accreditation Grade -->
+                <div class="flex items-center justify-center mb-6">
+                    <div class="w-20 h-20 bg-blue-500 text-white rounded-full flex items-center justify-center text-3xl font-bold mr-4">A</div>
+                    <div>
+                        <p class="text-2xl font-semibold">97/100</p>
+                        <p>Nilai Akreditasi</p>
+                    </div>
+                </div>
+                
+                <!-- Accreditation Progress Bars -->
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span>Nilai Standar Isi:</span>
+                            <span>100/100</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-4">
+                            <div class="bg-blue-500 h-4 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span>Nilai Standar Proses:</span>
+                            <span>97/100</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-4">
+                            <div class="bg-blue-500 h-4 rounded-full" style="width: 97%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span>Nilai Standar Kelulusan:</span>
+                            <span>96/100</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-4">
+                            <div class="bg-blue-500 h-4 rounded-full" style="width: 96%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span>Nilai Standar Sarana Prasarana:</span>
+                            <span>98/100</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-4">
+                            <div class="bg-blue-500 h-4 rounded-full" style="width: 98%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span>Nilai Standar Sarana Pembiayaan:</span>
+                            <span>88/100</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-4">
+                            <div class="bg-blue-500 h-4 rounded-full" style="width: 88%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span>Nilai Standar Pendidik:</span>
+                            <span>100/100</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-4">
+                            <div class="bg-blue-500 h-4 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span>Nilai Standar Pengelolaan:</span>
+                            <span>100/100</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-4">
+                            <div class="bg-blue-500 h-4 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="max-w-7xl mx-auto px-6 py-12"> -->
+            <!-- Visi Section -->
+            <section class="bg-white shadow-md rounded-lg p-8 mb-12">
+                <h2 class="text-2xl font-bold text-center text-black-600 mb-6">Visi</h2>
+                <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+                    <p class="text-lg text-gray-700 text-center italic">“Mewujudkan Insan yang Unggul, Berbudi Pekerti Luhur, dan Berdaya Saing Global.”</p>
+                </div>
+            </section>
+
+            <!-- Misi Section -->
+            <section class="bg-white shadow-md rounded-lg p-8 mb-12">
+                <h2 class="text-2xl font-bold text-center text-black-600 mb-6">Misi</h2>
+                <ul class="list-disc pl-6 space-y-4 text-lg text-gray-600">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                        <span>Meningkatkan pembelajaran yang efektif, efisien, dan profesional.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                        <span>Meningkatkan lingkungan belajar yang kondusif, kreatif, dan dinamis.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                        <span>Meningkatkan pelayanan pendidikan yang optimal.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                        <span>Membentuk peserta didik yang beriman, bertakwa, dan berbudi pekerti luhur.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                        <span>Membekali peserta didik dengan Bahasa Inggris dan Teknologi Informasi (TI) serta mampu bersaing secara global.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Identitas Sekolah Section -->
+            <section class="bg-white shadow-md rounded-lg p-8 mb-12">
+                <h2 class="text-2xl font-bold text-center text-black-600 mb-6">Identitas Sekolah</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-gray-800">NPSN</h3>
+                        <p class="text-gray-600">20326436</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-gray-800">Status</h3>
+                        <p class="text-gray-600">Negeri</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-gray-800">Bentuk Pendidikan</h3>
+                        <p class="text-gray-600">SMA</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-gray-800">Status Kepemilikan</h3>
+                        <p class="text-gray-600">Pemerintah Daerah</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-gray-800">SK Pendirian Sekolah</h3>
+                        <p class="text-gray-600">0236/0/1973</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-gray-800">Tanggal SK Pendirian</h3>
+                        <p class="text-gray-600">1973-12-18</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-gray-800">SK Izin Operasional</h3>
+                        <p class="text-gray-600">0353/0/1985</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-gray-800">Tanggal SK Izin Operasional</h3>
+                        <p class="text-gray-600">1985-08-09</p>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-2xl text-center font-bold mb-6">Lokasi Kami</h3>
+                    <div class="flex justify-center">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.145350266649!2d109.04574207363021!3d-6.873181993125558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fba7f098828d9%3A0xad662ce9f2c0cf0!2sSMA%20Negeri%202%20Brebes!5e0!3m2!1sid!2sid!4v1736348680972!5m2!1sid!2sid" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <!-- Facilities Section -->
+            <section id="facilities" class="bg-gray-50 py-16">
+                <div class="container mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-6">Fasilitas</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Facility Card 1 -->
+                        <div class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                            <div class="mb-4">
+                                <i class="fas fa-flask text-blue-600 text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Laboratorium</h3>
+                            <p class="text-gray-600">Laboratorium lengkap untuk komputer fisika, kimia, dan biologi.</p>
+                        </div>
+
+                        <!-- Facility Card 2 -->
+                        <div class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                            <div class="mb-4">
+                                <i class="fas fa-book text-green-600 text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Perpustakaan</h3>
+                            <p class="text-gray-600">Koleksi buku yang luas untuk mendukung pembelajaran.</p>
+                        </div>
+
+                        <!-- Facility Card 3 -->
+                        <div class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                            <div class="mb-4">
+                                <i class="fas fa-basketball-ball text-orange-600 text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Lapangan Olahraga</h3>
+                            <p class="text-gray-600">Lapangan untuk berbagai cabang olahraga.</p>
+                        </div>
+
+                        <!-- Facility Card 4 -->
+                        <div class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow- 2xl">
+                            <div class="mb-4">
+                                <i class="fas fa-paw text-purple-600 text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Smanda Zoo</h3>
+                            <p class="text-gray-600">Tempat pembelajaran interaktif dengan berbagai koleksi hewan untuk mendalami biologi.</p>
+                        </div>
+
+                        <!-- Facility Card 5 -->
+                        <div class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                            <div class="mb-4">
+                                <i class="fas fa-utensils text-red-600 text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Kantin</h3>
+                            <p class="text-gray-600">Kantin bersih dengan berbagai pilihan makanan sehat dan lezat.</p>
+                        </div>
+
+                        <!-- Facility Card 6 -->
+                        <div class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                            <div class="mb-4">
+                                <i class="fas fa-theater-masks text-indigo-600 text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Auditorium</h3>
+                            <p class="text-gray-600">Auditorium luas untuk kegiatan sekolah dan acara khusus.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <section id="programs" class="py-16 bg-gray-50">
+                <div class="container mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-6">Program</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Program Card 1: Jurusan IPA -->
+                        <div x-data="{ open: false }" class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl hover:bg-blue-50">
+                            <h3 class="text-xl font-bold mb-2">Jurusan IPA</h3>
+                            <p class="text-gray-600 text-sm mb-4">Fokus pada ilmu pengetahuan alam untuk mempersiapkan siswa dalam bidang sains dan teknologi.</p>
+                            <button @click="open = !open" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 w-full">
+                                Lihat Detail
+                            </button>
+                            <div x-show="open" x-transition class="mt-4 p-4 bg-gray-100 rounded-lg">
+                                <p class="text-gray-700">Jurusan IPA mengajarkan fisika, kimia, dan biologi untuk mempersiapkan siswa menjadi ahli sains dan teknologi. Program ini memberikan wawasan dalam pengembangan penelitian dan eksperimen ilmiah.</p>
+                            </div>
+                        </div>
+
+                        <!-- Program Card 2: Jurusan IPS -->
+                        <div x-data="{ open: false }" class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl hover:bg-green-50">
+                            <h3 class="text-xl font-bold mb-2">Jurusan IPS</h3>
+                            <p class="text-gray-600 text-sm mb-4">Fokus pada ilmu sosial untuk mempersiapkan siswa dalam bidang sosial dan humaniora.</p>
+                            <button @click="open = !open" class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-500 w-full">
+                                Lihat Detail
+                            </button>
+                            <div x-show="open" x-transition class="mt-4 p-4 bg-gray-100 rounded-lg">
+                                <p class="text-gray-700">Jurusan IPS mencakup studi ekonomi, geografi, dan sejarah untuk mengembangkan pemahaman siswa tentang dunia sosial dan interaksi antar manusia dalam berbagai aspek kehidupan.</p>
+                            </div>
+                        </div>
+
+                        <!-- Program Card 3: Program Lulus 2 Tahun -->
+                        <div x-data="{ open: false }" class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl hover:bg-yellow-50">
+                            <h3 class="text-xl font-bold mb-2">Program Lulus 2 Tahun</h3>
+                            <p class="text-gray-600 text-sm mb-4">Program percep atan belajar untuk siswa dengan kemampuan akademik tinggi yang ingin menyelesaikan studi dalam waktu dua tahun.</p>
+                            <button @click="open = !open" class="bg-yellow-600 text-white py-2 px-4 rounded hover:bg-yellow-500 w-full">
+                                Lihat Detail
+                            </button>
+                            <div x-show="open" x-transition class="mt-4 p-4 bg-gray-100 rounded-lg">
+                                <p class="text-gray-700">Program ini dirancang untuk siswa yang memiliki kemampuan belajar cepat dan siap menghadapi tantangan lebih awal dalam menyelesaikan pendidikan mereka di SMA dalam waktu yang lebih singkat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <!-- News Section -->
+            <section id="news" class="py-16">
+                <div class="container mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-6">Berita Terbaru</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- News Card 1 -->
+                        <div class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl" @click="openModal('Kegiatan Pramuka', 'Pramuka SMA N 2 Brebes meraih juara 1 lomba tingkat kabupaten.', 'gambar2/pramuka.jpg')">
+                            <img src="gambar2/pramuka.jpg" alt="Kegiatan Pramuka" class="w-full h-40 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold mb-2">Kegiatan Pramuka</h3>
+                            <p class="text-gray-600 text-sm">Pramuka SMA N 2 Brebes meraih juara 1 lomba tingkat kabupaten.</p>
+                            <p class="text-gray-500 text-xs mt-2">23 Desember 2024</p>
+                        </div>
+                        <!-- News Card 2 -->
+                        <div class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl" @click="openModal('Workshop Guru', 'Guru SMA N 2 Brebes mengikuti workshop pendidikan modern.', 'gambar2/workshop.jpeg')">
+                            <img src="gambar2/workshop.jpeg" alt="Workshop Guru" class="w-full h-40 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold mb-2">Workshop Guru</h3>
+                            <p class="text-gray-600 text-sm">Guru SMA N 2 Brebes mengikuti workshop pendidikan modern.</p>
+                            <p class="text-gray-500 text-xs mt-2">20 Desember 2024</p>
+                        </div>
+                        <!-- News Card 3 -->
+                        <div class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl" @click="openModal('Siswi Berprestasi', 'Juara 1 OSN Astronomi tingkat kab. Brebes.', 'gambar2/juara.jpeg')">
+                            <img src="gambar2/juara.jpeg" alt="Ujian Nasional" class="w-full h-40 object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold mb-2">Siswi Berprestasi</h3>
+                            <p class="text-gray-600 text-sm">Juara 1 OSN Astronomi tingkat kab. Brebes.</p>
+                            <p class="text-gray-500 text-xs mt-2">17 April 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <!-- Gallery Section -->
+            <section id="gallery" class="py-16 bg-gray-100">
+                <div class="container mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-6">Galeri</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Gallery Item 1 -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl" @click="openModal('Expo Campus', 'Kegiatan tahunan yang diadakan oleh alumni SMA N 2 Brebes untuk memperkenalkan kampus.', 'gambar2/expo.jpg')">
+                            <img src="gambar2/expo.jpg" alt="Gallery Image 1" class ="w-full h-64 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold mb-2">Expo Campus</h3>
+                                <p class="text-gray-600 text-sm">Kegiatan tahunan yang diadakan oleh alumni SMA N 2 Brebes untuk memperkenalkan kampus.</p>
+                            </div>
+                        </div>
+                        <!-- Gallery Item 2 -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl" @click="openModal('Ekstrakurikuler', 'Aktivitas ekstrakurikuler seni tari yang diikuti oleh siswa.', 'gambar2/pramuka.jpg')">
+                            <img src="gambar2/ekskul.jpg" alt="Gallery Image 2" class="w-full h-64 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold mb-2">Ekstrakurikuler</h3>
+                                <p class="text-gray-600 text-sm">Aktivitas ekstrakurikuler seni tari yang diikuti oleh siswa.</p>
+                            </div>
+                        </div>
+                        <!-- Gallery Item 3 -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl" @click="openModal('Smanda Zoo', 'Tempat pembelajaran interaktif dengan berbagai koleksi hewan untuk mendalami biologi.', 'gambar2/zoo.jpg')">
+                            <img src="gambar2/zoo.jpg" alt="Gallery Image 3" class="w-full h-64 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold mb-2">Smanda Zoo</h3>
+                                <p class="text-gray-600 text-sm">Tempat pembelajaran interaktif dengan berbagai koleksi hewan untuk mendalami biologi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modal -->
+            <div x-data="{ open: false, title: '', content: '', image: '' }" x-show="open" @click.away="open = false" class="modal">
+                <div class="modal-content">
+                    <span @click="open = false" class="close">&times;</span>
+                    <h2 class="text-xl font-bold mb-4" x-text="title"></h2>
+                    <img :src="image" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p x-text="content"></p>
+                </div>
+            </div>
+            <section id="contact" class="bg-blue-600 text-white py-16" style="width: 100%;"> 
+                <div class="container mx-auto text-center"> 
+                    <h2 class="text-3xl font-bold mb-6">Kontak Kami</h2> 
+                    <p class="mb-4">Jl. Ahmad Yani No. 77, Brebes, Kabupaten Brebes, Jawa Tengah.</p> 
+                    <p class="mb-4">Email: <a href="mailto:smadabes@ymail.com" class="underline hover:text-gray-200">smadabes@ymail.com</a> | Telepon: <span class="underline hover:text-gray-200">0283671060</span></p>
+                    <a href="mailto:smadabes@ymail.com" class="bg-white text-blue-600 py-2 px-4 rounded hover:bg-gray-200 transition duration-300">Hubungi Kami</a>
+                    <p class="mt-6">Ikuti kami di media sosial:</p>
+                    <div class="mt-10 flex justify-center space-x-5">
+                        <a href="https://www.facebook.com/smandabrebes/?locale=id_ID" class="text-2xl text-white hover:text-gray-200 transition duration-300"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/smandabes/" class="text-2xl text-white hover:text-gray-200 transition duration-300"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/sman2brebes" class="text-2xl text-white hover:text-gray-200 transition duration-300"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UCPQF4IHFPlMNaXuLiHp82Ww" class="text-2xl text-white hover:text-gray-200 transition duration-300"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </section> 
+            <footer class="py-5 bg-blue-600 text-white text-center font-bold ">&copy; Designed by Deby Apriliana</footer>
+            <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="fixed bottom-5 right-5 bg-white text-blue-600 rounded-full p-3 shadow-lg hover:bg-blue-100 transition duration-300" style="display: block;">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script> <!-- Link ke file JavaScript -->
+        </body>
+    </html>
